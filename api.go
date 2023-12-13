@@ -96,7 +96,7 @@ func validateResponse(res *http.Response) (map[string]interface{}, error) {
 	if err != nil {
 		return nil, fmt.Errorf("[error] failed to read: %v", err)
 	}
-	fmt.Println(string(body))
+	//fmt.Println(string(body))
 	b := make(map[string]interface{})
 	err = json.Unmarshal(body, &b)
 	if err != nil {
