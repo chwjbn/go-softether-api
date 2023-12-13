@@ -52,7 +52,7 @@ supported API methods
 To use this package, import this package like bellow.
 
 ```go
-import softether "github.com/terassyi/go-softether-api"
+import softether "github.com/chwjbn/go-softether-api"
 ```
 
 First, you have to create a new Api instance.

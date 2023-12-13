@@ -5,7 +5,7 @@ import (
 	"crypto/tls"
 	"encoding/json"
 	"fmt"
-	"github.com/terassyi/go-softether-api/pkg"
+	"github.com/chwjbn/go-softether-api/pkg"
 	"io/ioutil"
 	"net/http"
 )
@@ -61,7 +61,7 @@ func (api *Api) Call(method pkg.Method) (map[string]interface{}, error) {
 	api.id.Incl()
 	method.SetId(api.id.Describe())
 	body, err := method.Marshall()
-	fmt.Println(string(body))
+	//fmt.Println(string(body))
 	if err != nil {
 		return nil, fmt.Errorf("[error] failed to marshall request: %v", err)
 	}
